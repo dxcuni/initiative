@@ -273,7 +273,7 @@
                    var jsonObj = JSON.parse(varResponce);
                    varRoleDetailPDFlocation = jsonObj.url
 				 
-		 if (varRoleDetailPDFlocation != "") {/*PENNY TEST height from 400 to 600*/
+		 if (varRoleDetailPDFlocation != "") {/*PENNY TEST height from 400 to 500*/
                        var contentPDF = "<iframe width='100%' height='500' frameborder='0' src=" + varRoleDetailPDFlocation + "><\/iframe>";
 			        }
                   else {
@@ -422,14 +422,14 @@
     </div>
     <!-- IF user alrady registed with the role need to show this block  end-->
     <!-- PDF Overview Confirms Previous Box Start-->
-    <div id="divPDFConfirmPreview" style="display:none;" height="500"><!--PENNY TEST height 400 to 700-->
+    <div id="divPDFConfirmPreview" style="display:none;" height="500"><!--PENNY TEST height 400 to 500-->
         <div>
             <center>
                 <table border="10" cellpadding="0" cellspacing="10" >
                     <tr>
-                        <td align="center" style="font-weight:bold;" width="930px" height="500"> <!--PENNY TEST width 200 to 930 height 400 to 700-->
+                        <td align="center" style="font-weight:bold;" width="930px" height="500"> <!--PENNY TEST width 200 to 930 height 400 to 500-->
                             <div id="divPDFFrame" ></div>
-                            <!--<embed id="pdfRoleFile" src="" width="930px" height="500" />--><!--PENNY TEST width 400 to 930 height 200 to 700-->
+                            <!--<embed id="pdfRoleFile" src="" width="930px" height="500" />--><!--PENNY TEST width 400 to 930 height 200 to 500-->
                             
                         </td>
                     </tr>
