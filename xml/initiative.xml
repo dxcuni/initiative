@@ -427,7 +427,7 @@
             <center>
                 <table border="10" cellpadding="10" cellspacing="10" >
                     <tr>
-                        <td align="center" style="font-weight:bold;" width="700px" height="700px"> <!--PENNY TEST-->
+                        <td align="center" style="font-weight:bold;" width="720px" height="1100px"> <!--PENNY TEST Expand-->
                             <div id="divPDFFrame" ></div>
                             <!--<embed id="pdfRoleFile" src="" width="400px" height="200px" />-->
                             
