@@ -273,15 +273,15 @@
                    var jsonObj = JSON.parse(varResponce);
                    varRoleDetailPDFlocation = jsonObj.url
 				 
-		 if (varRoleDetailPDFlocation != "") {
-                       var contentPDF = "<iframe width='100%' height='400px' frameborder='0' src=" + varRoleDetailPDFlocation + "><\/iframe>";
+		 if (varRoleDetailPDFlocation != "") {/*PENNY TEST*/
+                       var contentPDF = "<iframe width='100%' height='700px' frameborder='0' src=" + varRoleDetailPDFlocation + "><\/iframe>";
 			        }
                   else {
-                       var contentPDF = "<iframe width='100%' height='400px' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
+                       var contentPDF = "<iframe width='100%' height='700px' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
                     }
                   
 			}
-			if($.trim(obj.errors)){/*PENNY TEST*/
+			if($.trim(obj.errors)){
 				var contentPDF = "<iframe width='100%' height='700px' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
 				
 			}
@@ -427,9 +427,9 @@
             <center>
                 <table border="10" cellpadding="10" cellspacing="10" >
                     <tr>
-                        <td align="center" style="font-weight:bold;" width="300px" height="400px"> <!--PENNY TEST Expand-->
+                        <td align="center" style="font-weight:bold;" width="350px" height="700px"> <!--PENNY TEST width 200 to 350 height 400 to 700-->
                             <div id="divPDFFrame" ></div>
-                            <!--<embed id="pdfRoleFile" src="" width="400px" height="200px" />-->
+                            <!--<embed id="pdfRoleFile" src="" width="400px" height="700px" />--><!--PENNY TEST height 200 to 700-->
                             
                         </td>
                     </tr>
