@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="API Demo" height="1150">
+  <ModulePrefs title="API Demo">
     <Require feature="opensocial-templates"/>
     <Require feature="opensocial-data"/>
     <Require feature="views"/>
@@ -273,16 +273,16 @@
                    var jsonObj = JSON.parse(varResponce);
                    varRoleDetailPDFlocation = jsonObj.url
 				 
-		 if (varRoleDetailPDFlocation != "") {/*PENNY TEST*/
-                       var contentPDF = "<iframe width='100%' height='650px' frameborder='0' src=" + varRoleDetailPDFlocation + "><\/iframe>";
+		 if (varRoleDetailPDFlocation != "") {/*PENNY TEST height from 400px to 100%*/
+                       var contentPDF = "<iframe width='100%' height='100%' frameborder='0' src=" + varRoleDetailPDFlocation + "><\/iframe>";
 			        }
                   else {
-                       var contentPDF = "<iframe width='100%' height='650px' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
+                       var contentPDF = "<iframe width='100%' height='100%' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
                     }
                   
 			}
 			if($.trim(obj.errors)){
-				var contentPDF = "<iframe width='100%' height='650px' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
+				var contentPDF = "<iframe width='100%' height='100%' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
 				
 			}
 			document.getElementById("divPDFFrame").innerHTML = contentPDF;
