@@ -422,14 +422,14 @@
     </div>
     <!-- IF user alrady registed with the role need to show this block  end-->
     <!-- PDF Overview Confirms Previous Box Start-->
-    <div id="divPDFConfirmPreview" style="display:none;" height="750px"><!--PENNY TEST width 400 to 700-->
+    <div id="divPDFConfirmPreview" style="display:none;" height="650px"><!--PENNY TEST width 400 to 700-->
         <div>
             <center>
                 <table border="10" cellpadding="10" cellspacing="10" >
                     <tr>
-                        <td align="center" style="font-weight:bold;" width="850px" height="500px"> <!--PENNY TEST width 200 to 800 height 400 to 700-->
+                        <td align="center" style="font-weight:bold;" width="900px" height="500px"> <!--PENNY TEST width 200 to 800 height 400 to 700-->
                             <div id="divPDFFrame" ></div>
-                            <!--<embed id="pdfRoleFile" src="" width="850px" height="500px" />--><!--PENNY TEST width 400 to 800 height 200 to 700-->
+                            <!--<embed id="pdfRoleFile" src="" width="900px" height="500px" />--><!--PENNY TEST width 400 to 800 height 200 to 700-->
                             
                         </td>
                     </tr>
