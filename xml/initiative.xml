@@ -422,7 +422,7 @@
     </div>
     <!-- IF user alrady registed with the role need to show this block  end-->
     <!-- PDF Overview Confirms Previous Box Start-->
-    <div id="divPDFConfirmPreview" style="display:none;" height="550px"><!--PENNY TEST width 400 to 550-->
+    <div id="divPDFConfirmPreview" style="display:none;" height="600px"><!--PENNY TEST width 400 to 600-->
         <div>
             <center>
                 <table border="10" cellpadding="10" cellspacing="10" >
