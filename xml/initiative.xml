@@ -281,8 +281,8 @@
                     }
                   
 			}
-			if($.trim(obj.errors)){
-				var contentPDF = "<iframe width='100%' height='400px' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
+			if($.trim(obj.errors)){/*PENNY TEST*/
+				var contentPDF = "<iframe width='100%' height='700px' frameborder='0' src=https://docs.google.com/viewer?url=https://test.com/test&embedded=true><\/iframe>";
 				
 			}
 			document.getElementById("divPDFFrame").innerHTML = contentPDF;
