@@ -90,6 +90,18 @@
            });
        });
           
+				// Define the refresh values start 
+				function getFreshPage(){
+						var ts = new Date().getTime();
+						  var sep = "?";
+						  if (refreshInterval && refreshInterval > 0) {
+							ts = Math.floor(ts / (refreshInterval * 1000));
+						  }
+						  if (urlAPIRoleList.indexOf("?") > -1) {
+							sep = "&";
+						  }
+					}
+			    // Define the refresh values END 
            /* Call Role API to get the RoleID.   Start 
 				Method GET, Input: Role Nmae
 				OutPot: RoleID
@@ -102,8 +114,17 @@
             var inputParam = {};
             inputParam.name = $.trim($("[id*=searchRoleParam]").val());    
             var urlAPI = urlAPIRole + "role?q=(name==" + inputParam.name  + ")&SabaCertificate=" + sabaCertificate;
+						var ts = new Date().getTime();
+						  var sep = "?";
+						  if (refreshInterval && refreshInterval > 0) {
+							ts = Math.floor(ts / (refreshInterval * 1000));
+						  }
+						  if (urlAPI.indexOf("?") > -1) {
+							sep = "&";
+						  }
+			urlAPI = [ urlAPI, sep, "nocache=", ts ].join("");	
             gadgets.io.makeRequest(urlAPI, role2Response, params);
-	    document.getElementById("lbRoleID").innerHTML = inputParam.name; 
+	        document.getElementById("lbRoleID").innerHTML = inputParam.name; 
 
         } 
         function role2Response(obj) {
@@ -232,6 +253,17 @@
             
             var inputParam = {};
             var jobEmpSearchURLParam = urlAPIRole + "role/" + roleID+"?includeassociation=true&SabaCertificate=" + sabaCertificate;
+			
+			var ts = new Date().getTime();
+						  var sep = "?";
+						  if (refreshInterval && refreshInterval > 0) {
+							ts = Math.floor(ts / (refreshInterval * 1000));
+						  }
+						  if (jobEmpSearchURLParam.indexOf("?") > -1) {
+							sep = "&";
+						  }
+			jobEmpSearchURLParam = [ jobEmpSearchURLParam, sep, "nocache=", ts ].join("");
+			
 			gadgets.io.makeRequest(jobEmpSearchURLParam, roleDetail2Response, params);
 			
         } 
@@ -266,6 +298,16 @@
             
             var inputParam = {};            
 			var varURLAPIRole = urlAPIRole + "attachments?ownerId=" + roleID +"&SabaCertificate=" + sabaCertificate
+			var ts = new Date().getTime();
+						  var sep = "?";
+						  if (refreshInterval && refreshInterval > 0) {
+							ts = Math.floor(ts / (refreshInterval * 1000));
+						  }
+						  if (varURLAPIRole.indexOf("?") > -1) {
+							sep = "&";
+						  }
+			varURLAPIRole = [ varURLAPIRole, sep, "nocache=", ts ].join("");
+			
 			gadgets.io.makeRequest(varURLAPIRole, rolePDFFile2Response, params);
 			
         } 
@@ -318,6 +360,17 @@
 				params[gadgets.io.RequestParameters.POST_DATA] = postdata;	
 				params[gadgets.io.RequestParameters.HEADERS] = headers;	
 			    var setRoleAPIURL = urlAPIRole + "people/" + employeeID + "/requiredjobrole?SabaCertificate=" + sabaCertificate;
+				
+				var ts = new Date().getTime();
+						  var sep = "?";
+						  if (refreshInterval && refreshInterval > 0) {
+							ts = Math.floor(ts / (refreshInterval * 1000));
+						  }
+						  if (setRoleAPIURL.indexOf("?") > -1) {
+							sep = "&";
+						  }
+			setRoleAPIURL = [ setRoleAPIURL, sep, "nocache=", ts ].join("");
+			
                 gadgets.io.makeRequest(setRoleAPIURL, setRoleDetail2Response, params);
 		
 				
@@ -366,7 +419,7 @@
                     <tr>
                         <td align="center"  style="font-weight:bold;">
                                                     
-                            Please Enter Your Initiative/ Progarm Code  111
+                            Please Enter Your Initiative/ Progarm Code  232323
 			</td>
                     </tr>
                     <tr>                            
