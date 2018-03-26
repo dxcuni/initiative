@@ -104,7 +104,7 @@
             var urlAPI = urlAPIRole + "role?q=(name==" + inputParam.name  + ")&SabaCertificate=" + sabaCertificate;
             gadgets.io.makeRequest(urlAPI, role2Response, params);
 	    document.getElementById("lbRoleID").innerHTML = inputParam.name; 
-	    console.clear();	
+
         } 
         function role2Response(obj) {
            
@@ -169,7 +169,7 @@
 						  }
 							urlAPIRoleList = [ urlAPIRoleList, sep, "nocache=", ts ].join("");					
 							gadgets.io.makeRequest(urlAPIRoleList, getRegisteredRole2Response, params);	
-      							console.clear();
+      							
       			  } 
         	function getRegisteredRole2Response(obj) {
 			        var strRoleFound = false;
@@ -233,7 +233,7 @@
             var inputParam = {};
             var jobEmpSearchURLParam = urlAPIRole + "role/" + roleID+"?includeassociation=true&SabaCertificate=" + sabaCertificate;
 			gadgets.io.makeRequest(jobEmpSearchURLParam, roleDetail2Response, params);
-			console.clear();
+			
         } 
         function roleDetail2Response(obj) {
             if(obj.data)
@@ -267,7 +267,7 @@
             var inputParam = {};            
 			var varURLAPIRole = urlAPIRole + "attachments?ownerId=" + roleID +"&SabaCertificate=" + sabaCertificate
 			gadgets.io.makeRequest(varURLAPIRole, rolePDFFile2Response, params);
-			console.clear();
+			
         } 
         function rolePDFFile2Response(obj) {
             if(obj.data)
@@ -319,7 +319,7 @@
 				params[gadgets.io.RequestParameters.HEADERS] = headers;	
 			    var setRoleAPIURL = urlAPIRole + "people/" + employeeID + "/requiredjobrole?SabaCertificate=" + sabaCertificate;
                 gadgets.io.makeRequest(setRoleAPIURL, setRoleDetail2Response, params);
-		console.clear();
+		
 				
 		} 
 		
