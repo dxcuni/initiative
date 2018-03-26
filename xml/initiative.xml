@@ -35,7 +35,7 @@
    // gadgets.util.registerOnLoadHandler(init);
       function init(){
                    
-            viewData = gadgets.views.getParams(); //this brings in the ViewParams data passed from Saba
+            //viewData = gadgets.views.getParams(); //this brings in the ViewParams data passed from Saba
       }
 	  
 	   
@@ -361,7 +361,7 @@
                     <tr>
                         <td align="center"  style="font-weight:bold;">
                                                     
-                            Please Enter Your Initiative/ Progarm Code  
+                            Please Enter Your Initiative/ Progarm Code  123
 			</td>
                     </tr>
                     <tr>                            
