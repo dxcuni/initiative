@@ -9,11 +9,8 @@
 	  </ModulePrefs>
 	  <Content type="html" view="profile">
 	  <![CDATA[
-
 		<!--<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>-->
 	       <script src='../resource/js/jquery.min.js' type='text/javascript'></script>
-
-
 	    <script type="text/javascript" language="javascript">
 			/* Global Varaibles Start */ 
 			   var sabaCertificate ;
@@ -25,7 +22,6 @@
 			   var  errorAPIRoleAssigmnet = "Insufficient Privileges: You do not have Can add required/optional role for self privilege on Person, Internal";
 			   var varRoleDetailPDFlocation ;//= "https://raw.githubusercontent.com/poc-org/initiative/itg/doc/";
 		   /* Global Varaibles END */ 
-
 		viewData = gadgets.views.getParams();   
 		    sabaCertificate =  viewData.sabaContext.apiCertificate;
 		    userName = $.trim(viewData.sabaContext.userName);
@@ -494,7 +490,7 @@
 			    <tr>
 				<td align="center" style="font-weight:bold;">
 				    <p>
-					Congratulations On Starting The Journey To Become A Leader Of Technology Leader Of DXCís Next Gen Business.  You Will Find The Related Learning Has Been Added To Your ìMy Learningî And The Related 	To ìMy Skillsî. 
+					Congratulations On Starting The Journey To Become A Leader Of Technology Leader Of DXC‚Äôs Next Gen Business.  You Will Find The Related Learning Has Been Added To Your ‚ÄúMy Learning‚Äù And The Related 	To ‚ÄúMy Skills‚Äù "
 				    </p>
 				</td>
 			    </tr>
@@ -522,7 +518,7 @@
 			<table border="10" cellpadding="10" cellspacing="10">
 			    <tr>
 				<td align="center" style="font-weight:bold;"><p>
-					 Sorry You Could Not Participate At This Time.  If Later You Wish To Become A Technology Leader Of DXCís Future Business You Can Do So By Selecting  ìMeî and ìMy Invitationî.  Remember You Will Need Code "<label id="lbRoleID"></label>".                                  
+					 Sorry You Could Not Participate At This Time.  If Later You Wish To Become A Technology Leader Of DXC‚Äôs Future Business You Can Do So By Selecting  ‚ÄúMe‚Äù and ‚ÄúInitiatives/Programs‚Äù.  Remember You Will Need Code "<label id="lbRoleID"></label>".                                  
 					</p>
 				</td>
 			    </tr>
