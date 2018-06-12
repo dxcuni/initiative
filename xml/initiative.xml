@@ -37,55 +37,6 @@
 
 
 
-	       $(function () {       
-		    $("#btnRoleSubmit").click(function () {      
-			  if ($.trim($("[id*=searchRoleParam]").val()) == "")
-			       {
-				   alert("Provide the Initiative/ Progarm Code");
-				   return;
-			       }
-			  else{
-			submitGetRegisteredRoleQuery();   
-			      }
-
-		   });
-		   $("#btnRoleCancel").click(function () {
-		       document.getElementById("searchRoleParam").value = ""
-		   });
-		   $("#btnRoleBack").click(function () {
-		       $("#divRoleSkillListPreview").css("display", "none");
-		       $("#divPDFConfirmPreview").css("display", "block");
-		   });
-		   $("#btnRoleConfrim").click(function () {	
-			submitSetRoleInUserProfile();        
-		   });   
-		  $("#btnCloseConfirmation").click(function () {               
-		       $("#divAffirmationAcknowledgement").css("display", "none");
-		       $("#divRoleForm").css("display", "block");
-		   });     
-		   $("#btnPDFEnroll").click(function () {               
-		       $("#divPDFConfirmPreview").css("display", "none");
-		       $("#divRoleSkillListPreview").css("display", "block");
-		   });
-		   $("#btnPDFDecline").click(function () {
-		       $("#divPDFConfirmPreview").css("display", "none");
-		       $("#divDeclinePreview").css("display", "block");
-		   });
-		   $("#btnBackToMain").click(function () {
-		       $("#divDeclinePreview").css("display", "none");
-		       $("#divRoleForm").css("display", "block");
-		   });
-		   $("#btnCloseAPIError").click(function () {
-		       $("#divAPIErrorMessage").css("display", "none");
-		       $("#divRoleForm").css("display", "block");
-		   });
-		   $("#btnBackToMainRole").click(function () {
-		       $("#divRegisteredRole").css("display", "none");
-		       $("#divRoleForm").css("display", "block");
-
-		   });
-	       });
-
 		   /* Call Role API to get the RoleID.   Start 
 					Method GET, Input: Role Nmae
 					OutPot: RoleID
@@ -105,7 +56,7 @@
 			    <tr>
 				<td align="center"  style="font-weight:bold;">
 
-				    Please Enter Your Initiative/ Program Code111
+				    Please Enter Your Initiative/ Program Code 222111
 				</td>
 			    </tr>
 			    <tr>                            
@@ -159,116 +110,8 @@
 		    </center>
 		</div>
 	    </div>
-	    <!-- PDF Overview Confirms Previous Box END-->
-	    <!-- Employee Skill Role Confirms Previous Box Start-->
-	    <div id="divRoleSkillListPreview" style="display:none">
-		<div>
-		    <center>
-			<table border="10" cellpadding="10" cellspacing="10">
-			    <tr>
-				<td align="center" style="font-weight:bold;">
-				     <div id="divCourseDetails">
-				    </div>
-				</td>
-			    </tr>
-			    <tr>
-				<td>
-				    <table align="center">
-					<tr>
-					    <td align="center">									
-
-
-										    <input type="button" id="btnRoleConfrim" value="Confirm">&nbsp;&nbsp;&nbsp;&nbsp;										
-						<input type="button" id="btnRoleBack" value="Back">
-					    </td>
-					</tr>
-				    </table>
-				</td>
-			    </tr>
-			</table>
-		    </center>
-		</div>
-	    </div>
-		<!-- Employee Skill Role Confirms Previous Box END-->
-
-		 <!-- Affirmation Acknowledgement Box Start-->
-	    <div id="divAffirmationAcknowledgement" style="display:none">
-		<div>
-		    <center>
-			<table border="10" cellpadding="10" cellspacing="10">
-			    <tr>
-				<td align="center" style="font-weight:bold;">
-				    <p>
-					Congratulations On Starting The Journey To Become A Leader Of Technology Leader Of DXC’s Next Gen Business.  You Will Find The Related Learning Has Been Added To Your “My Learning” And The Related 	To “My Skills”. 
-				    </p>
-				</td>
-			    </tr>
-			    <tr>
-				<td>
-				    <table align="center">
-					<tr>
-					    <td align="center">
-						<input type="button" id="btnCloseConfirmation" value="Close">
-					    </td>
-					</tr>
-				    </table>
-				</td>
-			    </tr>
-			</table>
-		    </center>
-		</div>
-	    </div>
-	    <!-- Affirmation Acknowledgement Box END-->
-
-		<!-- User Declined Participation Box Start-->
-	    <div id="divDeclinePreview" style="display:none">
-		<div>
-		    <center>
-			<table border="10" cellpadding="10" cellspacing="10">
-			    <tr>
-				<td align="center" style="font-weight:bold;"><p>
-					 Sorry You Could Not Participate At This Time.  If Later You Wish To Become A Technology Leader Of DXC’s Future Business You Can Do So By Selecting  “Me” and “My Invitation”.  Remember You Will Need Code "<label id="lbRoleID"></label>".                                  
-					</p>
-				</td>
-			    </tr>
-			    <tr>
-				<td>
-				    <table align="center">
-					<tr>
-					    <td align="center">
-						<input type="button" id="btnBackToMain" value="Close">
-
-					    </td>
-					</tr>
-				    </table>
-				</td>
-			    </tr>
-			</table>
-		    </center>
-		</div>
-	    </div>
-	    <!-- User Declined Participation Box END-->
-	     <!-- API Error Messgae Box Start-->
-	    <div id="divAPIErrorMessage" style="display:none">
-		<div>
-		    <center>
-			<table border="10" cellpadding="10" cellspacing="10">
-			    <tr>
-				<td align="center" style="font-weight:bold;">
-				    <p>
-				       Error: <label id="lbAPIError"></label>.
-				    </p>
-				</td>
-			    </tr>
-			    <tr>
-				<td align="center">                           
-				    <input type="button" id="btnCloseAPIError" value="Close">
-				</td>
-			    </tr>
-			</table>
-		    </center>
-		</div>
-	    </div>
+	    
+		
 	</div>
 	    <!-- API Error Messgae Box END-->
 	    </script>
