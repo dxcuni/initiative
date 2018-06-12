@@ -34,7 +34,7 @@
 
 			
 			var contentPDF = "<iframe width='100%' height='500' frameborder='0' src=http://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeId="+employeeID+"><\/iframe>";
-alert(contentPDF);
+alert("124");
 //console.log(contentPDF);
 	        //document.getElementById("divPDFFrame").innerHTML = contentPDF;
 
@@ -53,7 +53,7 @@ alert(contentPDF);
 			    <tr>
 				<td align="center" style="font-weight:bold;" width="930px" height="500"> 
 				    <div id="divPDFFrame" ></div>
-					<iframe width='100%' height='500' frameborder='0' src=https://rawgit.com/dxcuni/admintool/itg/pages/admintool.html></iframe>
+					<iframe width='100%' height='500' frameborder='0' src='https://rawgit.com/dxcuni/admintool/itg/pages/admintool.html'></iframe>
 				</td>
 			    </tr>
 			    <tr>
