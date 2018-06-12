@@ -35,8 +35,8 @@
 			
 			var contentPDF = "<iframe width='100%' height='500' frameborder='0' src=http://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeId="+employeeID+"><\/iframe>";
 alert(contentPDF);
-console.log(contentPDF);
-	        document.getElementById("divPDFFrame").innerHTML = contentPDF;
+//console.log(contentPDF);
+	        //document.getElementById("divPDFFrame").innerHTML = contentPDF;
 
 			/* Call to Get the Role PDF File   END  */
 	/* Error Message Handling END */
