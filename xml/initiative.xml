@@ -31,10 +31,10 @@
 		    userName = $.trim(viewData.sabaContext.userName);
 		    employeeID = $.trim(viewData.sabaContext.userId) ;
 		    urlAPIRole =  $.trim(decodeURIComponent(viewData.sabaParams.saba_api_url))+'/v1/' ;
-//alert(userName +" -- "+employeeID);
+alert(userName +" -- "+employeeID);
 
 
-
+document.getElementById('myIframe').src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID
 
 
 		   /* Call Role API to get the RoleID.   Start 
@@ -50,7 +50,7 @@
 	    <!-- Search Box Start-->
 	<div  style="height:600px">
 	    
-				   <iframe width='100%' height='500' frameborder='0' src='https://rawgit.com/dxcuni/admintool/itg/pages/admintool.html'></iframe>
+				   <iframe width='100%' height='500' frameborder='0' src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='></iframe>
 			
 		
 	    </div>
