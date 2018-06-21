@@ -42,7 +42,7 @@ document.frames["myIframe"].onload = function(){
    document.getElementById('myIframe').src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID
 }
 
-
+top.document.getElementById('AppFrame').setAttribute("src",'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID);
 
 		   /* Call Role API to get the RoleID.   Start 
 					Method GET, Input: Role Nmae
@@ -67,7 +67,13 @@ document.frames["myIframe"].onload = function(){
 	    
 		
 	</div>
+
+<script type="text/javascript" language="javascript">
+top.document.getElementById('myIframe').setAttribute("src",'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID);
+</script>
 	    <!-- API Error Messgae Box END-->
+
+
 	    </script>
 	  ]]>
 	  </Content>
