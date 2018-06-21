@@ -34,7 +34,7 @@
 		 function Initialize(employeeID) {
 
                 srcPath='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID ;
-		 document.getElementById("myIframe").src ='''+srcPath+'''
+		 document.getElementById("myIframe").src=srcPath
 		 }
 	    </script>
 	    <script type="text/os-template">
