@@ -31,7 +31,7 @@
 		    urlAPIRole =  $.trim(decodeURIComponent(viewData.sabaParams.saba_api_url))+'/v1/' ;
 
 		 gadgets.util.registerOnLoadHandler(Initialize);
-		 function Update() {
+		 function Initialize() {
 		 document.getElementById("myIframe").src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=emplo000000000104546' ;
 		 }
 	    </script>
