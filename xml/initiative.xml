@@ -30,8 +30,8 @@
 		    employeeID = $.trim(viewData.sabaContext.userId) ;
 		    urlAPIRole =  $.trim(decodeURIComponent(viewData.sabaParams.saba_api_url))+'/v1/' ;
 
-		 gadgets.util.registerOnLoadHandler(Initialize(employeeID));
-		 function Initialize(employeeID) {
+		 gadgets.util.registerOnLoadHandler(Initialize);
+		 function Initialize() {
 
                 srcPath='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID ;
 		 document.getElementById("myIframe").src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=emplo000000000003200'
