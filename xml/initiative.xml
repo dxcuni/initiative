@@ -32,9 +32,9 @@
 
 		 gadgets.util.registerOnLoadHandler(Initialize);
 		 function Initialize() {
-alert('Hi')
-                srcPath='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID ;
 
+                srcPath='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID ;
+alert(srcPath)
 		 document.getElementById("myIframe").src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=emplo000000000003200'
 
 
