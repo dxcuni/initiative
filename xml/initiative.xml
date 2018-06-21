@@ -33,16 +33,6 @@
 		    urlAPIRole =  $.trim(decodeURIComponent(viewData.sabaParams.saba_api_url))+'/v1/' ;
 
 
-function iframeDidLoad(employeeID) {
-    
-document.getElementById('myIframe').src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID
-}
-
-document.frames["myIframe"].onload = function(){
-   document.getElementById('myIframe').src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID
-}
-
-top.document.getElementById('AppFrame').setAttribute("src",'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID);
 
 		   /* Call Role API to get the RoleID.   Start 
 					Method GET, Input: Role Nmae
