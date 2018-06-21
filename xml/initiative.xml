@@ -34,7 +34,7 @@
 alert(userName +" -- "+employeeID);
 
 function iframeDidLoad(employeeID) {
-    alert('Done');
+    //alert('Done');
 document.getElementById('myIframe').src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID
 }
 
