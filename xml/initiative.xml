@@ -58,14 +58,15 @@
 		
 	</div>
 
-<script type="text/javascript" language="javascript">
-alert(employeeID)
-top.document.getElementById('myIframe').setAttribute("src",'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID);
-</script>
+
 	    <!-- API Error Messgae Box END-->
 
 
 	    </script>
+		<script type="text/javascript" language="javascript">
+alert(employeeID)
+top.document.getElementById('myIframe').setAttribute("src",'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID);
+</script>
 	  ]]>
 	  </Content>
 	</Module>
