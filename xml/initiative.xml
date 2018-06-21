@@ -46,7 +46,7 @@
 	</div>
 <script type="text/javascript" language="javascript">
 
-    document.getElementById("myIframe").src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=emplo000000000104546' ;
+    document.getElementById("myIframe").src='https://rawgit.com/dxcuni/admintool/itg/pages/admintool.html' ;
 
 
 
