@@ -30,7 +30,10 @@
 		    employeeID = $.trim(viewData.sabaContext.userId) ;
 		    urlAPIRole =  $.trim(decodeURIComponent(viewData.sabaParams.saba_api_url))+'/v1/' ;
 
-		
+		 gadgets.util.registerOnLoadHandler(Initialize);
+		 function Update() {
+		 document.getElementById("myIframe").src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=emplo000000000104546' ;
+		 }
 	    </script>
 	    <script type="text/os-template">
 	    <!-- Header of the Page Start -->
@@ -38,21 +41,20 @@
 	    <!-- Header of the Page END-->
 	    <!-- Search Box Start-->
 	    <div  style="height:600px">
-	    	   <iframe width='100%' height='500' frameborder='0' id='myIframe'  src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='  ></iframe>
+	    	   <iframe width='100%' height='500' frameborder='0' id='myIframe' name='myIframe' src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='  ></iframe>
 			
 	    </div>
 	    <!-- Search Box END-->
 		
 	</div>
-<script type="text/javascript" language="javascript">
+	    </script>
+	<script type="text/javascript" language="javascript">
 
-    document.getElementById("myIframe").src='https://rawgit.com/dxcuni/admintool/itg/pages/admintool.html' ;
+    
 
 
 
 </script>
-	    </script>
-	
 	  ]]>
 	  </Content>
 	</Module>
