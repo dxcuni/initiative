@@ -31,16 +31,16 @@
 		    urlAPIRole =  $.trim(decodeURIComponent(viewData.sabaParams.saba_api_url))+'/v1/' ;
 
 		 gadgets.util.registerOnLoadHandler(Initialize);
-		 function Initialize() {
-		 document.getElementById("myIframe").src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=emplo000000000104546' ;
+		 function Initialize(employeeID) {
+		 document.getElementById("myIframe").src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID ;
 		 }
 	    </script>
 	    <script type="text/os-template">
 	    <!-- Header of the Page Start -->
-
+HI
 	    <!-- Header of the Page END-->
 	    <!-- Search Box Start-->
-	    <div  style="height:600px">
+	    <div  style="height:600px"> HI
 	    	   <iframe width='100%' height='500' frameborder='0' id='myIframe' name='myIframe' src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='  ></iframe>
 			
 	    </div>
