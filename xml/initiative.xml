@@ -38,7 +38,7 @@
 	    <!-- Header of the Page END-->
 	    <!-- Search Box Start-->
 	    <div  style="height:600px">
-	    	   <iframe width='100%' height='500' frameborder='0' id='myIframe' name='myIframe' src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=' onLoad="iframeDidLoad();" ></iframe>
+	    	   <iframe width='100%' height='500' frameborder='0' id='myIframe' name='myIframe' src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='  ></iframe>
 			
 	    </div>
 	    <!-- Search Box END-->
@@ -46,10 +46,10 @@
 	</div>
 	    </script>
 	<script type="text/javascript" language="javascript">
-function iframeDidLoad(employeeID) {
+
     document.getElementById('myIframe').src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID ;
 
-}
+
 
 </script>
 	  ]]>
