@@ -34,7 +34,7 @@
 		 function Initialize() {
 
                 srcPath='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID ;
-alert(srcPath)
+
 		 document.getElementById("myIframe").src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=emplo000000000003200'
 
 
