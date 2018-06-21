@@ -31,10 +31,10 @@
 		    userName = $.trim(viewData.sabaContext.userName);
 		    employeeID = $.trim(viewData.sabaContext.userId) ;
 		    urlAPIRole =  $.trim(decodeURIComponent(viewData.sabaParams.saba_api_url))+'/v1/' ;
-//alert(userName +" -- "+employeeID);
+
 
 function iframeDidLoad(employeeID) {
-    //alert('Done');
+    
 document.getElementById('myIframe').src = 'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID
 }
 
