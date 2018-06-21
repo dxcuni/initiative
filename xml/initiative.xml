@@ -9,10 +9,8 @@
 	  </ModulePrefs>
 	  <Content type="html" view="profile">
 	  <![CDATA[
-		<!--<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>-->
-
-	       <script src='../resource/js/jquery.min.js' type='text/javascript'></script>
-
+		
+	    <script src='../resource/js/jquery.min.js' type='text/javascript'></script>
 
 	    <script type="text/javascript" language="javascript">
 			/* Global Varaibles Start */ 
@@ -32,12 +30,6 @@
 		    employeeID = $.trim(viewData.sabaContext.userId) ;
 		    urlAPIRole =  $.trim(decodeURIComponent(viewData.sabaParams.saba_api_url))+'/v1/' ;
 
-
-
-		   /* Call Role API to get the RoleID.   Start 
-					Method GET, Input: Role Nmae
-					OutPot: RoleID
-			   */
 		
 	    </script>
 	    <script type="text/os-template">
@@ -45,26 +37,16 @@
 
 	    <!-- Header of the Page END-->
 	    <!-- Search Box Start-->
-	<div  style="height:600px">
-	    
-				   <iframe width='100%' height='500' frameborder='0' id='myIframe' name='myIframe' src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=' ></iframe>
+	    <div  style="height:600px">
+	    	   <iframe width='100%' height='500' frameborder='0' id='myIframe' name='myIframe' src='https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid=' ></iframe>
 			
-		
 	    </div>
 	    <!-- Search Box END-->
-		<!-- PDF Overview Confirms Previous Box Start-->
-	    
-	    
 		
 	</div>
-
-
-	    <!-- API Error Messgae Box END-->
-
-
 	    </script>
-		<script type="text/javascript" language="javascript">
-alert(employeeID)
+	<script type="text/javascript" language="javascript">
+
 top.document.getElementById('myIframe').setAttribute("src",'https://zc4w00306.itcs.houston.dxc.technology/sabamicro/Default.aspx?employeeid='+employeeID);
 </script>
 	  ]]>
